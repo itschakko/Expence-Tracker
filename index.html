@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Expense Tracker</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header><!--Page Title-->
+            <h1 id="title">Expense Tracker</h1>
+        </header>
+        <main>
+            <div class="divForm">  <!--Input area-->
+                <p class="form"><input id="inputName" placeholder="Name"></p>
+                <p class="form"><input id="inputDate" type="date" placeholder="Date"></p>
+                <p class="form"><input id="inputAmount" type="number" placeholder="Amount"></p>
+                <Button id="addExpenseButton">Add Expense</Button>
+            </div>
+            <div> <!--Table-->
+                <table class="expenseTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                   <tbody id="expenseTableBody">
+                    
+                   </tbody>
+                </table>
+            </div>
+            <div>
+                <h2 id="total">
+                    Total Amount:
+                </h2>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
